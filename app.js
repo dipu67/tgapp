@@ -7,6 +7,9 @@ const io = socket(server);
 require("dotenv").config();
 const BOT_TOKEN = process.env.TOKEN;
 
+const setWebhook = require('./utils/setWebHook')
+const handleMessage = require('./utils/handleMessage')
+
 app.set("view engine", "ejs");
 app.use(express.json());
 // app.use(express.urlencoded({extended:true}))
