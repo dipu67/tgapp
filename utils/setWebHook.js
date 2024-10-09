@@ -2,9 +2,8 @@
 require("dotenv").config();
 const axios = require('axios');
 
-const BOT_TOKEN = process.env.TOKEN; // Replace with your bot token
-// const WEBHOOK_URL = 'https://a24.fun/bot' + BOT_TOKEN; // Replace with your HTTPS URL
-const WEBHOOK_URL = '/bot' + BOT_TOKEN; // Replace with your HTTPS URL
+const BOT_TOKEN = process.env.TOKEN; 
+const WEBHOOK_URL = 'https://tgapp.a24.fun/bot' + BOT_TOKEN; 
 // Function to set the webhook
 
 async function setWebhook() {
@@ -21,3 +20,4 @@ async function setWebhook() {
 
 // Call the function to set the webhook
 setWebhook();
+ 
